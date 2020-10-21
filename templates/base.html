@@ -1,0 +1,33 @@
+{% load static %} 
+<head>
+<title> Django plog</title>
+<link rel="stylesheet" href={% static 'css/base.css'  %} >
+</head>
+<body>
+
+    <header>
+        <div class="nav-left">
+           <h1><a href={% url 'home' %} > Django Board </a></h1>
+           <a href={% url 'post_new' %}> + New post</a>
+         
+       </div>
+       
+      
+       
+         <hr>
+     
+    </header>
+
+    
+    
+
+
+
+
+    <div>
+        {% block content %}
+
+
+        {% endblock content %}
+    </div>
+</body>
